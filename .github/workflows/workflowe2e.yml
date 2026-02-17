@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run SonarQube Scanner
-        run: mvn sonar:sonar -Dsonar.projectKey=devsecops-github-actions-all -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+        run: mvn sonar:sonar -Dsonar.projectKey=rammetla_devsecops-github-actions-all -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
       - name: Set up JDK 17
         uses: actions/setup-java@v3
